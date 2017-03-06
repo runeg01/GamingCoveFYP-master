@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.danny.gamingcovefyp.LoginActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/enterEmail"
+
+        android:layout_above="@+id/enterPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColorHighlight="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textCursorDrawable="@android:color/black" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/enterPassword"
+
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColorHighlight="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textCursorDrawable="@android:color/black" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Account"
+        android:id="@+id/registerButton"
+
+        android:layout_below="@+id/enterPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColorLink="@android:color/black"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Have an account? Log in here"
+        android:id="@+id/signIn"
+        android:textAlignment="center"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/registerButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

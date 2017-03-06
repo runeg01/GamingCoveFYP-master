@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+
+    <TextView
+        android:text="Welcome to the chatrooms! Here you can select a genre and join/create a chatroom, remember to be friendly."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:layout_alignLeft="@+id/buttonAdventure"
+        android:layout_alignStart="@+id/buttonAdventure"
+        android:layout_alignRight="@+id/buttonFPS"
+        android:layout_alignEnd="@+id/buttonFPS" />
+
+    <Button
+        android:text="FPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/buttonFPS"
+        android:layout_alignBaseline="@+id/buttonAdventure"
+        android:layout_alignBottom="@+id/buttonAdventure"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:text="RPG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRPG"
+        android:layout_alignBaseline="@+id/buttonFPS"
+        android:layout_alignBottom="@+id/buttonFPS"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:text="Adventure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/buttonAdventure"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:text="RTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAdventure"
+        android:layout_alignLeft="@+id/buttonAdventure"
+        android:layout_alignStart="@+id/buttonAdventure"
+        android:layout_marginTop="86dp"
+        android:id="@+id/buttonRTS"
+        />
+
+    <Button
+        android:text="MOBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonRTS"
+        android:layout_alignLeft="@+id/buttonRPG"
+        android:layout_alignStart="@+id/buttonRPG"
+        android:id="@+id/buttonMOBA"
+        />
+
+    <Button
+        android:text="Sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonMOBA"
+        android:layout_alignLeft="@+id/buttonFPS"
+        android:layout_alignStart="@+id/buttonFPS"
+        android:id="@+id/buttonSports"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:id="@+id/infoAdventure"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/buttonAdventure"
+        android:layout_alignLeft="@+id/buttonAdventure"
+        android:layout_alignStart="@+id/buttonAdventure"
+        android:layout_alignRight="@+id/buttonAdventure"
+        android:layout_alignEnd="@+id/buttonAdventure" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:id="@+id/infoRPG"
+        android:layout_alignBaseline="@+id/infoAdventure"
+        android:layout_alignBottom="@+id/infoAdventure"
+        android:layout_alignLeft="@+id/buttonRPG"
+        android:layout_alignStart="@+id/buttonRPG" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:id="@+id/infoFPS"
+        android:layout_alignBaseline="@+id/infoRPG"
+        android:layout_alignBottom="@+id/infoRPG"
+        android:layout_alignLeft="@+id/buttonFPS"
+        android:layout_alignStart="@+id/buttonFPS" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:id="@+id/infoRTS"
+        android:layout_below="@+id/buttonRTS"
+        android:layout_alignLeft="@+id/buttonRTS"
+        android:layout_alignStart="@+id/buttonRTS"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:id="@+id/infoMOBA"
+        android:layout_alignBaseline="@+id/infoRTS"
+        android:layout_alignBottom="@+id/infoRTS"
+        android:layout_alignLeft="@+id/buttonMOBA"
+        android:layout_alignStart="@+id/buttonMOBA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:id="@+id/infoSports"
+        android:layout_alignBaseline="@+id/infoMOBA"
+        android:layout_alignBottom="@+id/infoMOBA"
+        android:layout_alignLeft="@+id/buttonSports"
+        android:layout_alignStart="@+id/buttonSports" />
+
+    </RelativeLayout>
+

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1006676479761",
+    "firebase_url": "https://gamingcovefyp.firebaseio.com",
+    "project_id": "gamingcovefyp",
+    "storage_bucket": "gamingcovefyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006676479761:android:c37b071a0c56fec1",
+        "android_client_info": {
+          "package_name": "com.danny.gamingcovefyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006676479761-72r1sppck435vffan8gerlvuhcl8620g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpS_Ho6ws9TbyuozK6Xk28PDeejyfU-0w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

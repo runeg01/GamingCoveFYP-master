@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:text="Adventure games are the pinnacle of video games, you usually take on the role of a protagonist who is involved in a story driven by exploration and puzzles, many of these game are solo player oriented, some examples of adventure games include; Grand Theft Auto V, Fallout 4, Resident Evil, Dishnored 2 and much more   "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/informationAdventureText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="160dp" />
+
+</RelativeLayout>
