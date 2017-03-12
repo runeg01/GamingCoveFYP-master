@@ -1,4 +1,4 @@
-package com.danny.gamingcovefyp;
+package com.danny.gamingcovefyp.Review;
 
 /**
  * Created by danny on 27/02/2017.

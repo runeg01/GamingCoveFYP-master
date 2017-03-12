@@ -1,4 +1,4 @@
-package com.danny.gamingcovefyp;
+package com.danny.gamingcovefyp.Chatroom;
 
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.danny.gamingcovefyp.R;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

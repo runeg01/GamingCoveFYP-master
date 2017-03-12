@@ -1,4 +1,4 @@
-package com.danny.gamingcovefyp;
+package com.danny.gamingcovefyp.Chatroom;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -12,27 +12,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-
+import com.danny.gamingcovefyp.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Objects;
 import java.util.Set;
-
-import static android.R.attr.data;
-import static android.R.attr.name;
-
-/**
- * Created by danny on 23/02/2017.
- */
 
 public class AddRoomActivity extends AppCompatActivity {
     private Button add_room;
@@ -42,7 +33,7 @@ public class AddRoomActivity extends AppCompatActivity {
     private ArrayList<String> list_of_rooms = new ArrayList<>();
     private String name;
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference root = FirebaseDatabase.getInstance().getReference();
+
     DatabaseReference ref = database.getReference("ChatRoomNames");
 
 

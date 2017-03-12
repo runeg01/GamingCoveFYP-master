@@ -18,17 +18,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".GenreChatroomActivity"></activity>
+        <activity android:name=".Chatroom.GenreChatroomActivity"></activity>
         <activity android:name=".informationAdventureActivity"></activity>
         <activity android:name=".informationRPGActivity"></activity>
         <activity android:name=".informationFPSActivity"></activity>
         <activity android:name=".informationRTSActivity"></activity>
         <activity android:name=".informationMOBAActivity"></activity>
         <activity android:name=".informationSportsActivity"></activity>
-        <activity android:name=".AddRoomActivity"></activity>
-        <activity android:name=".ChatRoomActivity"></activity>
-        <activity android:name=".ReviewActivity"></activity>
-        <activity android:name=".PostReviewActivity"></activity>
+        <activity android:name=".Chatroom.AddRoomActivity"></activity>
+        <activity android:name=".Chatroom.ChatRoomActivity"></activity>
+        <activity android:name=".Chatroom.AddAdventureRoomActivity"></activity>
+        <activity android:name=".Chatroom.AddRPGRoomActivity"></activity>
+        <activity android:name=".Chatroom.AddRTSRoomActivity"></activity>
+        <activity android:name=".Chatroom.AddMOBARoomActivity"></activity>
+        <activity android:name=".Chatroom.AddSportsRoomActivity"></activity>
+        <activity android:name=".Review.ReviewActivity"></activity>
+        <activity android:name=".Review.PostReviewActivity"></activity>
         <activity
             android:name=".DashboardActivity"
             android:label="Dashboard"

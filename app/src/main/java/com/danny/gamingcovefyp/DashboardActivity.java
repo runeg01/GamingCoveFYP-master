@@ -11,6 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.danny.gamingcovefyp.Chatroom.GenreChatroomActivity;
+import com.danny.gamingcovefyp.Review.ReviewActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 import static com.danny.gamingcovefyp.R.id.nav_logout;

@@ -1,12 +1,19 @@
-package com.danny.gamingcovefyp;
+package com.danny.gamingcovefyp.Chatroom;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.danny.gamingcovefyp.R;
+import com.danny.gamingcovefyp.informationAdventureActivity;
+import com.danny.gamingcovefyp.informationFPSActivity;
+import com.danny.gamingcovefyp.informationMOBAActivity;
+import com.danny.gamingcovefyp.informationRPGActivity;
+import com.danny.gamingcovefyp.informationRTSActivity;
+import com.danny.gamingcovefyp.informationSportsActivity;
 
 /**
  * Created by danny on 21/02/2017.
@@ -41,6 +48,11 @@ public class GenreChatroomActivity extends AppCompatActivity implements View.OnC
         infoSports=(TextView)findViewById(R.id.infoSports);
 
         buttonFPS = (Button)findViewById(R.id.buttonFPS);
+        buttonAdventure =(Button)findViewById(R.id.buttonAdventure);
+        buttonRPG = (Button)findViewById(R.id.buttonRPG);
+        buttonRTS = (Button)findViewById(R.id.buttonRTS);
+        buttonMOBA = (Button)findViewById(R.id.buttonMOBA);
+        buttonSports = (Button)findViewById(R.id.buttonSports);
 
         infoAdventure.setOnClickListener(this);
         infoRPG.setOnClickListener(this);
@@ -50,6 +62,11 @@ public class GenreChatroomActivity extends AppCompatActivity implements View.OnC
         infoSports.setOnClickListener(this);
 
         buttonFPS.setOnClickListener(this);
+        buttonAdventure.setOnClickListener(this);
+        buttonRPG.setOnClickListener(this);
+        buttonRTS.setOnClickListener(this);
+        buttonMOBA.setOnClickListener(this);
+        buttonSports.setOnClickListener(this);
     }
 
 
@@ -84,6 +101,21 @@ public class GenreChatroomActivity extends AppCompatActivity implements View.OnC
         }
         if (view == buttonFPS){
             startActivity(new Intent(this, AddRoomActivity.class));
+        }
+        if (view == buttonAdventure){
+            startActivity(new Intent(this, AddAdventureRoomActivity.class));
+        }
+        if (view == buttonRPG){
+            startActivity(new Intent(this,AddRPGRoomActivity.class));
+        }
+        if (view == buttonRTS){
+            startActivity(new Intent(this, AddRTSRoomActivity.class));
+        }
+        if (view == buttonMOBA){
+            startActivity(new Intent(this, AddMOBARoomActivity.class));
+        }
+        if (view == buttonSports){
+            startActivity(new Intent(this, AddSportsRoomActivity.class));
         }
 
     }
