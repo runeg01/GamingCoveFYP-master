@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.danny.gamingcovefyp.DashboardActivity;
 import com.danny.gamingcovefyp.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +24,7 @@ import com.squareup.picasso.Picasso;
 
 public class ReviewActivity extends AppCompatActivity implements View.OnClickListener {
     private Button writeReview;
+    private Button buttonBack;
     private RecyclerView reviewList;
     private LinearLayoutManager layoutManager;
     private DatabaseReference database;
@@ -42,6 +44,9 @@ public class ReviewActivity extends AppCompatActivity implements View.OnClickLis
 
         writeReview = (Button)findViewById(R.id.reviewButton);
         writeReview.setOnClickListener(this);
+
+        buttonBack = (Button) findViewById(R.id.buttonBack);
+        buttonBack.setOnClickListener(this);
     }
 
     @Override
@@ -95,7 +100,9 @@ public class ReviewActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view){
         if (view ==  writeReview){
             startActivity(new Intent(this, PostReviewActivity.class));
-
+        }
+        if (view == buttonBack){
+            startActivity(new Intent(this, DashboardActivity.class));
         }
 
     }

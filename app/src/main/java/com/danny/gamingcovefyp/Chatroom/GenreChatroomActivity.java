@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.danny.gamingcovefyp.DashboardActivity;
 import com.danny.gamingcovefyp.R;
 import com.danny.gamingcovefyp.informationAdventureActivity;
 import com.danny.gamingcovefyp.informationFPSActivity;
@@ -26,6 +27,7 @@ public class GenreChatroomActivity extends AppCompatActivity implements View.OnC
     private Button buttonRTS;
     private Button buttonMOBA;
     private Button buttonSports;
+    private Button buttonBack;
 
     private TextView infoAdventure;
     private TextView infoRPG;
@@ -53,6 +55,7 @@ public class GenreChatroomActivity extends AppCompatActivity implements View.OnC
         buttonRTS = (Button)findViewById(R.id.buttonRTS);
         buttonMOBA = (Button)findViewById(R.id.buttonMOBA);
         buttonSports = (Button)findViewById(R.id.buttonSports);
+        buttonBack = (Button) findViewById(R.id.buttonBack);
 
         infoAdventure.setOnClickListener(this);
         infoRPG.setOnClickListener(this);
@@ -67,6 +70,7 @@ public class GenreChatroomActivity extends AppCompatActivity implements View.OnC
         buttonRTS.setOnClickListener(this);
         buttonMOBA.setOnClickListener(this);
         buttonSports.setOnClickListener(this);
+        buttonBack.setOnClickListener(this);
     }
 
 
@@ -116,6 +120,9 @@ public class GenreChatroomActivity extends AppCompatActivity implements View.OnC
         }
         if (view == buttonSports){
             startActivity(new Intent(this, AddSportsRoomActivity.class));
+        }
+        if (view == buttonBack){
+            startActivity(new Intent (this, DashboardActivity.class));
         }
 
     }

@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent">
+    android:background="@color/colorPrimaryDark">
 
     <TextView
         android:text="Adventure games are the pinnacle of video games, you usually take on the role of a protagonist who is involved in a story driven by exploration and puzzles, many of these game are solo player oriented, some examples of adventure games include; Grand Theft Auto V, Fallout 4, Resident Evil, Dishnored 2 and much more   "
@@ -15,5 +15,58 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="160dp" />
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPrevious"
+        android:background="@drawable/ic_chevron_left_black_18px"
+        android:layout_marginBottom="91dp"
+        android:layout_above="@+id/informationAdventureText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="viewEnd"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonNext"
+        android:background="@drawable/ic_chevron_right_black_18px"
+        android:layout_alignBaseline="@+id/buttonPrevious"
+        android:layout_alignBottom="@+id/buttonPrevious"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <ViewAnimator
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewAnimator"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo3"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gta5"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dishonored"/>
+
+
+
+
+    </ViewAnimator>
+
 
 </RelativeLayout>
