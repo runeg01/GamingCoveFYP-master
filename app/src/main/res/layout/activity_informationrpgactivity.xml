@@ -1,20 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorAccent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
 
-    <TextView
-        android:text="THIS IS THE RPG INFO PAGE"
+
+    <ViewAnimator
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewAnimator"
+        android:layout_marginBottom="30dp"
+        android:layout_alignBottom="@+id/buttonPrevious"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thewitcher"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/masseffect"/>
+
+
+    </ViewAnimator>
+
+    <Button
+
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/informationRPGText"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonPrevious"
+        android:background="@drawable/ic_chevron_left_black_18px"
+        android:textAlignment="viewEnd"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonNext"
+        android:background="@drawable/ic_chevron_right_black_18px"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignBaseline="@+id/buttonPrevious"
+        android:layout_alignBottom="@+id/buttonPrevious"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonNext"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="160dp" />
+        android:layout_marginTop="66dp">
 
+
+        <TextView
+            android:text="RPG games are loved by many, you usually take on the role of a protagonist who is involved in a story driven by exploration and puzzles, many of these game are solo player oriented, some examples of adventure games include; Grand Theft Auto V, Fallout 4, Resident Evil, Dishnored 2 and much more   "
+            android:layout_width="match_parent"
+            android:layout_height="303dp"
+            android:id="@+id/informationRPGText"
+            android:layout_above="@+id/informationRPGText9"
+            android:layout_toRightOf="@+id/linearLayout4"
+            android:layout_toEndOf="@+id/linearLayout4" />
+    </LinearLayout>
 
 
 </RelativeLayout>
