@@ -7,39 +7,48 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.danny.gamingcovefyp.Chatroom.GenreChatroomActivity;
 import com.danny.gamingcovefyp.Review.ReviewActivity;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import static com.danny.gamingcovefyp.R.id.nav_logout;
 
 
 
-public class DashboardActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private FirebaseAuth firebaseAuth;
+    private TextView aboutAppTitle;
+    private TextView aboutAppDesc;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        aboutAppTitle = (TextView)findViewById(R.id.about_app_title);
+        aboutAppDesc = (TextView)findViewById(R.id.about_app_info);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         firebaseAuth = FirebaseAuth.getInstance();
         if(firebaseAuth.getCurrentUser()==null){
             finish();
             startActivity(new Intent(this, LoginActivity.class));
         }
-
-
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -89,18 +98,14 @@ public class DashboardActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_reviews) {
+        if (id == R.id.nav_reviews) {
             startActivity(new Intent(this, ReviewActivity.class));
 
         } else if (id == R.id.nav_chatrooms) {
 
             startActivity(new Intent(this, GenreChatroomActivity.class));
 
-        } else if (id == R.id.nav_about) {
+
 
         } else if (id == nav_logout) {
 

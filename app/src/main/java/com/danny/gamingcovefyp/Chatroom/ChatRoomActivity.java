@@ -51,13 +51,12 @@ public class ChatRoomActivity extends AppCompatActivity {
     );
 
 
-    btn_send_msg.setOnClickListener(new View.OnClickListener(){
+        btn_send_msg.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View view){
             Map<String,Object> map = new HashMap<String, Object>();
             temp_key = root.push().getKey();
             root.updateChildren(map);
-
             DatabaseReference message_root = root.child(temp_key);
             Map<String,Object> map2 = new HashMap<String, Object>();
             map2.put("name", user_name);

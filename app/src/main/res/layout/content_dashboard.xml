@@ -13,4 +13,35 @@
     tools:context="com.danny.gamingcovefyp.DashboardActivity"
     tools:showIn="@layout/app_bar_dashboard">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_app_title"
+        android:text="Welcome to GamingCove!"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_app_info"
+        android:text="GamingCove has a host of features that you might find useful, navigate to the reviews by clicking on the menu to the top left, here you will see user reviews of their favourite video games, why not create your own and get your opinion across? another feature that GamingCove offers is online chatrooms where you can choose a genre and create/join a chat room, make new friends and game together!"
+        android:padding="10dp"
+
+        android:layout_below="@+id/about_app_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo3"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+
 </RelativeLayout>

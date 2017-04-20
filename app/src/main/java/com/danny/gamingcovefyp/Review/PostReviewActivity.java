@@ -67,19 +67,17 @@ public class PostReviewActivity extends AppCompatActivity {
         submitReview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startPosting();
+                PostReview();
 
             }
 
 
         });
     }
-        private void startPosting(){
+        private void PostReview(){
             progress.setMessage("Posting review!");
-
             final String title_val = reviewTitle.getText().toString().trim();
             final String desc_val = reviewDescription.getText().toString().trim();
-
             if(!TextUtils.isEmpty(title_val)&& !TextUtils.isEmpty(desc_val)&& imageUri != null)
                 progress.show();{
                 StorageReference filepath = storage.child("Review_Images").child(imageUri.getLastPathSegment());

@@ -36,8 +36,9 @@ public class AddAdventureRoomActivity extends AppCompatActivity {
     private ArrayAdapter<String> arrayAdapter;
     private ArrayList<String> list_of_rooms = new ArrayList<>();
     private String name;
-    final FirebaseDatabase database = FirebaseDatabase.getInstance();
 
+
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference ref = database.getReference("ChatRoomNamesAdventure");
 
 

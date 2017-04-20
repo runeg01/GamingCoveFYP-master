@@ -30,11 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        firebaseAuth = firebaseAuth.getInstance();
-        if (firebaseAuth.getCurrentUser()!= null){
-            finish();
-            startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
-        }
+
         progressDialog = new ProgressDialog(this);
         registerButton = (Button) findViewById(R.id.registerButton);
         enterEmail = (EditText) findViewById(R.id.enterEmail);
@@ -43,6 +39,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         registerButton.setOnClickListener(this);
         signIn.setOnClickListener(this);
+
+        firebaseAuth = firebaseAuth.getInstance();
+        if (firebaseAuth.getCurrentUser()!= null){
+            finish();
+            startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+        }
 
     }
 
@@ -60,19 +62,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "please enter password", Toast.LENGTH_SHORT).show();
             return;
         }
+        //progress box showing user being registered
         progressDialog.setMessage("Registering user...");
         progressDialog.show();
 
         firebaseAuth.createUserWithEmailAndPassword(email, password)
+                //called when task is complete
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        //register successfully
                         if (task.isSuccessful()){
                             finish();
                             startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
                             Toast.makeText(MainActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
 
                         }else{
+                            //register failure
                             Toast.makeText(MainActivity.this, "Could not register", Toast.LENGTH_SHORT).show();
                         }
                         progressDialog.hide();
