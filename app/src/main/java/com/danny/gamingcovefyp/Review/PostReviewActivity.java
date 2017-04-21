@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+
 import com.danny.gamingcovefyp.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -19,24 +20,18 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-/**
- * Created by danny on 26/02/2017.
- */
+
 
 public class PostReviewActivity extends AppCompatActivity {
     private ImageButton selectImage;
     private EditText reviewTitle;
     private EditText reviewDescription;
+
     private Button submitReview;
     private Uri imageUri = null;
     private StorageReference storage;
     private ProgressDialog progress;
     private DatabaseReference database;
-
-
-
-
-
     private static final int GALLERY_REQUEST = 1;
 
     @Override
@@ -44,7 +39,7 @@ public class PostReviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_review);
         storage = FirebaseStorage.getInstance().getReference();
-        database = FirebaseDatabase.getInstance().getReference().child("Reviews");
+        database = FirebaseDatabase.getInstance().getReference().child("Reviews");//Reviews database reference
 
 
         selectImage = (ImageButton) findViewById(R.id.imageSelect);
@@ -78,6 +73,7 @@ public class PostReviewActivity extends AppCompatActivity {
             progress.setMessage("Posting review!");
             final String title_val = reviewTitle.getText().toString().trim();
             final String desc_val = reviewDescription.getText().toString().trim();
+
             if(!TextUtils.isEmpty(title_val)&& !TextUtils.isEmpty(desc_val)&& imageUri != null)
                 progress.show();{
                 StorageReference filepath = storage.child("Review_Images").child(imageUri.getLastPathSegment());

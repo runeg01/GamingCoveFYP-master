@@ -1,21 +1,21 @@
 package com.danny.gamingcovefyp.Review;
 
-/**
- * Created by danny on 27/02/2017.
- */
+
 
 public class Review {
 
     private String title, desc, image;
+    private float rating;
 
     public Review(){
 
     }
 
-    public Review(String title, String desc, String image){
+    public Review(String title, String desc, String image, float rating){
         this.title = title;
         this.desc = desc;
         this.image = image;
+        this.rating = rating;
     }
 
     public String getTitle() {
@@ -41,4 +41,8 @@ public class Review {
     public void setImage(String image) {
         this.image = image;
     }
+
+
+
+
 }

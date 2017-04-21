@@ -9,7 +9,7 @@
             android:title="reviews" />
         <item
             android:id="@+id/nav_chatrooms"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_sms_black_18px"
             android:title="Chatrooms" />
     </group>
 

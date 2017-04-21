@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.danny.gamingcovefyp.DashboardActivity;
@@ -18,9 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
-/**
- * Created by danny on 26/02/2017.
- */
+
 
 public class ReviewActivity extends AppCompatActivity implements View.OnClickListener {
     private Button writeReview;
@@ -57,9 +56,7 @@ public class ReviewActivity extends AppCompatActivity implements View.OnClickLis
                 R.layout.review_row,
                 ReviewViewHolder.class,
                 database
-
             ) {
-
 
             @Override
             protected void populateViewHolder(ReviewViewHolder viewHolder, Review model, int position) {
@@ -94,6 +91,7 @@ public class ReviewActivity extends AppCompatActivity implements View.OnClickLis
             ImageView post_image = (ImageView) view.findViewById(R.id.post_image);
             Picasso.with(ctx).load(image).into(post_image);
         }
+
     }
 
     @Override
