@@ -13,7 +13,7 @@
             android:title="Chatrooms" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="User menu">
         <menu>
 
             <item

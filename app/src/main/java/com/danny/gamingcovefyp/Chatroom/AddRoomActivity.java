@@ -92,7 +92,7 @@ public class AddRoomActivity extends AppCompatActivity {
             }
         });
     }
-
+    //REQUEST USERNAME BEFORE THE USER IS ALLOWED TO CREATE ROOM
         protected void request_user_name() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Enter name:");

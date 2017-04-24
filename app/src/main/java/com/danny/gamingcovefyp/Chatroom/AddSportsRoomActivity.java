@@ -27,9 +27,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Created by danny on 12/03/2017.
- */
+
 
 public class AddSportsRoomActivity extends AppCompatActivity {
     private Button add_room;
@@ -98,7 +96,7 @@ public class AddSportsRoomActivity extends AppCompatActivity {
             }
         });
     }
-
+    //REQUEST USERNAME BEFORE THE USER IS ALLOWED TO CREATE ROOM
     protected void request_user_name() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Enter name:");
