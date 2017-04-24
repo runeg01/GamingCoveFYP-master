@@ -1,7 +1,7 @@
 package com.danny.gamingcovefyp.Chatroom;
 
 import android.os.Bundle;
-import android.provider.ContactsContract;
+
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -20,9 +20,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-/**
- * Created by danny on 23/02/2017.
- */
 
 public class ChatRoomActivity extends AppCompatActivity {
     private Button btn_send_msg;

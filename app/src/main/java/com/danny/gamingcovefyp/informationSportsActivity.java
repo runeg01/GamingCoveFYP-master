@@ -9,9 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ViewAnimator;
 
-/**
- * Created by danny on 22/02/2017.
- */
+
 
 public class informationSportsActivity extends AppCompatActivity {
 

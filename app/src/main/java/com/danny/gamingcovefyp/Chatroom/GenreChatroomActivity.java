@@ -16,10 +16,8 @@ import com.danny.gamingcovefyp.informationRPGActivity;
 import com.danny.gamingcovefyp.informationRTSActivity;
 import com.danny.gamingcovefyp.informationSportsActivity;
 
-/**
- * Created by danny on 21/02/2017.
- */
 
+//THIS CLASS IS TO ALLOW THE USER TO CHOOSE A GENRE OF THE CHAT ROOM
 public class GenreChatroomActivity extends AppCompatActivity implements View.OnClickListener {
     private Button buttonFPS;
     private Button buttonRPG;

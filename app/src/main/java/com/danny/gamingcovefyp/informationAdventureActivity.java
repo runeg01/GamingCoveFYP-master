@@ -9,9 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ViewAnimator;
 
-/**
- * Created by danny on 21/02/2017.
- */
+
 
 public class informationAdventureActivity extends AppCompatActivity {
     private TextView informationActivityText;
